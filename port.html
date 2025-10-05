@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="/job_logger/Images/arch_design.png" alt="Architecture Design">
+
+    <div>
+        <h1>WorkFlow</h1>
+        <p>
+            1. User pastes or visits a job posting URL
+
+            2. Front-end sends URL to backend → backend scrapes metadata
+            
+            3. Backend returns title, company, description → auto-fills form fields
+            
+            4. User confirms/edit fields, clicks Submit
+            
+            5. Backend logs the job in Google Sheet (timestamp + status)
+            
+            6. Optional: Front-end table displays logged jobs
+        </p>
+
+        <p>once you have url send it to the backend to parse the data will use puppeter instead of something like axios/cheerio bc these sites are dynamic not static</p>
+    </div>
+</body>
+</html>
